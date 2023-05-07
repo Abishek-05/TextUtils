@@ -37,9 +37,9 @@ export default function TextArea(props)
 				<textarea className={`form-control textArea-${props.mode}`} id="myBox" rows="6" placeholder="Enter your text here" value = {text} onChange={handleChange}></textarea>
 				</div>
 
-				<button disabled = {text.length == 0} className="btn btn-primary mx-2 my-1" onClick={handleUpclick}>Convert to UpperCase</button>
-				<button disabled = {text.length == 0} className="btn btn-primary mx-2 my-1" onClick={handleLowclick}>Convert to LowerCase</button>
-				<button disabled = {text.length == 0} className="btn btn-primary mx-2 my-1" onClick={handleSpeak}>Speak</button>
+				<button disabled = {text.length === 0} className="btn btn-primary mx-2 my-1" onClick={handleUpclick}>Convert to UpperCase</button>
+				<button disabled = {text.length === 0} className="btn btn-primary mx-2 my-1" onClick={handleLowclick}>Convert to LowerCase</button>
+				<button disabled = {text.length === 0} className="btn btn-primary mx-2 my-1" onClick={handleSpeak}>Speak</button>
 			</div>
 			
 			<div className={`container my-5 textContent-${props.mode}`}>
