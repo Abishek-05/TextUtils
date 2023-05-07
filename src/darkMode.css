@@ -1,0 +1,7 @@
+.textContent-dark, .about-dark{
+	color: white;
+}
+.textArea-dark, .textArea-dark:focus{
+	background-color: black;
+	color:white
+}
